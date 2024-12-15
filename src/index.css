@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation {
+  animation: leftRight 1s ease-in-out infinite;
+}
+
+li {
+  cursor: pointer;
+}
+
+@keyframes leftRight {
+  0%,
+  100% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+}
